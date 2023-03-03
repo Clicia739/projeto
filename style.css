@@ -1,0 +1,188 @@
+/* hero bg imagem */
+.bgimagem {
+    height:100vh;
+    background: url('img/heroImagem.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* texto hero image*/
+.hero_titulo{
+    font-size: 4.5rem;
+}
+.hero_sub {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ddd;
+}
+
+.hero-text:hover{
+    color: #ff0015;
+    border-bottom: 4px solid goldenrod;
+}
+
+/* Imagem da seção Sobre */
+.imagemSobre {
+    width: 100%;
+}
+
+/* Seção serviços */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #000480;
+}
+.servicesText:hover {
+    border: 1px solid #000480;
+}
+
+.navbar {
+    background-color:#1d2ff4;
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(5, 20, 130);
+    border-bottom: 4px solid red;
+}
+
+.contactIcon{
+    font-size: 56px;
+    color:#1d2ff4;
+}
+
+.card-alt {
+    height: 15em;
+}
+
+#sobre, #habilidades, #portfolio, #contato {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: rgb(5, 20, 130);
+}
+
+.glass {
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    background: rgba(56, 22, 205, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(56, 22, 205, 0.2)
+}
+
+
+/* contato */
+.whatsapp {
+    color: #128C7E;
+}
+
+a:hover.whatsapp {
+    color: #25D366;
+}
+
+.linkedin {
+    color: #0e76a8;
+}
+a:hover.linkedin {
+    color: #0b5e86;
+}
+
+.github {
+    color: #333333;
+}
+
+a:hover.github {
+    color: #000000;
+}
+
+a:hover.instagram {
+    color: #ed1299;
+}
+
+.instagram {
+    color: #db8fd2;
+}
+
+.status .erro {
+    color: #ff0015;
+}
+
+.status .ok {
+    color: #00a028;
+}
+
+/* footer */
+.copy {
+    background-color: rgba(0,0,0, 0.2);
+}
+
+footer .btn {
+    color: #000000;
+    font-size: 150%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+footer .btn:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+#form-contato{
+    text-align: center;
+    object-position: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+.card-item{
+    justify-content: center;
+    list-style: none;
+}
+
+.descricao{
+    justify-content: center;
+    list-style: none;
+    color: rgb(5, 20, 130);
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.fa-brands{
+    justify-content: center;
+    list-style: none;
+    font-size: 50px;
+    margin-left: 60px;
+    width: 100%;
+
+}
+
+
+
+

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Locadora Jtpeg</title>
+	
+	<!-- arquivo CSS próprio-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- Java Script -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!-- Menu Navbar-->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid bg-secondary text-white">
+			<!-- Imagem e Título -->
+			<img style="width:3%;" src="img/film.svg">
+			<a class="navbar-brand text-primary p-3 mb-2 " href="#topo">Locadora Jtpeg</a>
+			<!-- Div com itens clicáveis -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active text-primary p-3 mb-2" href="#tabFilmes">Filmes Disponíveis</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-primary p-3 mb-2" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown" > Filmes por Categoria </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item text-primary" href="#gAcao">Ação</a></li>
+							<li><a class="dropdown-item text-primary" href="#gAnim">Animação</a></li>
+							<li><a class="dropdown-item text-primary" href="#gRoman">Terror</a></li>
+							<li><a class="dropdown-item text-primary" href="#gSus">Comédia</a></li>
+							<li><a class="dropdown-item text-primary" href="#gSus">Romace	</a></li>
+							<li><a class="dropdown-item text-primary" href="#gSus">Suspense</a></li>
+							<li><a class="dropdown-item text-primary" href="#gSus">Documentario</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-primary p-3 mb-2" href="#cadFilmes">Cadastrar Filme</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/editor-5f4fd76ddb70f.jpeg" class="d-block w-60" alt="imagem de videolocadora">
+    </div>
+    <div class="carousel-item">
+      <img src="img/editor-5f4fd799d0a6b.jpeg" class="d-block w-60" alt="imagem de videolocadora">
+    </div>
+    <div class="carousel-item">
+      <img src="img/editor-5f4fd7bf6a8ab.jpeg" class="d-block w-60" alt="imagem de videolocadora">
+    </div>
+  </div>
+  <div class="carousel-caption d-none d-md-block">
+        <h5>Video Locadora Jtpeg....</h5>
+        <p>Filmes de animação, terror, drama, series, comedia e romance e muito mais.</p>
+      </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">volta</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">anvaça</span>
+  </button>
+</div>
+
+	<!-- Titulo Locadora -->
+	<h1 class="display-1 text-center mb-5 text-primary">Locadora Jtapeg....</h1>
+
+	<!-- Tabela filmes disponíveis -->
+	<div class="container">
+		<table class="table table-striped table-hover">
+			<!-- Linha com títulos das colunas -->
+			<thead>
+				<tr>
+					<th scope="col">Código		</th>
+					<th scope="col">Título		</th>
+					<th scope="col">Diretor		</th>
+					<th scope="col">Lançamento	</th>
+					<th scope="col">Gênero		</th>
+					<th scope="col">Ator/Atriz Prin.</th>
+					<th scope="col">IBMp		</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAcao">Ação</th>
+				</tr>
+				<!-- Primeiro filme -->
+			  	<tr>
+					<th scope="row">1</th>
+					<td>Batman: O Cavaleiro das Trevas</td>
+					<td>Christopher Nolan</td>
+					<td>18 de julho de 2008</td>
+					<td>Ação</td>
+					<td>Christian Bale</td>
+					<td>9,0/10</td>
+
+				</tr>
+				<!-- Segundo filme -->
+				<tr>
+					<th scope="row">2</th>
+					<td>	O Império Contra-Ataca	</td>
+					<td>Irvin Kershner</td>
+					<td>21 de julho de 1980</td>
+					<td>Ação</td>
+					<td>Mark Hamill</td>
+          <td>8,7/10</td>
+				</tr>
+				<!-- Terceiro filme -->
+				<tr>
+					<th scope="row">3</th>
+					<td>Matrix</td>
+					<td>Lana Wachowski, Lilly Wachowski</td>
+					<td>21 de maio de 1999</td>
+					<td>Ação</td>
+					<td>Keanu Reeves</td>
+          <td>8,7/10</td>
+				</tr>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Animação</th>
+				</tr>
+				<!-- Quarto Filme filme -->
+			  	<tr>
+			  		<th scope="row">4</th>
+			    	<td>A Viagem de Chihiro</td>
+			      <td>Hayao Miyazaki</td>
+					  <td>18 de julho de 2003</td>
+					  <td>Animação</td>
+					  <td>Rumi Hiiragi (voz)</td>
+            <td>8,6/10</td>
+				</tr>
+				<!-- Quinto filme -->
+				<tr>
+					 <th scope="row">5</th>
+					 <td> O Rei Leão</td>
+					 <td>Rob Minkoff, Roger Allers</td>
+					 <td>8 de julho de 1994</td>
+					 <td>Animação</td>
+					 <td>James Earl Jones (voz)</td>
+           <td>8,5/10</td>
+				</tr>
+				<!-- Sexto filme -->
+				<tr>
+					 <th scope="row">6</th>
+					 <td>Túmulo dos Vagalumes</td>
+					 <td>Isao Takahata</td>
+					 <td>24 de novembro de 1989</td>
+					 <td>Animação</td>
+					 <td>TSUTOMU TATSUMI (voz)</td>
+           <td>8,5/10</td>
+				</tr>
+
+                <tr>
+					<th class="text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Terror</th>
+				</tr>
+
+				<tr>
+					 <th scope="row">7</th>
+					 <td>Olhos famintos</td>
+					 <td>Victor Salva</td>
+					 <td>26 de julho de 2001</td>
+					 <td>Terror</td>
+					 <td>Jonathan Breck</td>
+           <td>1.5/5</td>
+				</tr>
+      
+				<tr>
+					<th scope="row">8</th>
+					 <td>Casa de cera</td>
+					 <td>Jaum Collet-serra</td>
+					 <td>3 de junho de 2005</td>
+					 <td>Terror</td>
+					 <td>Elisha Cuthbert</td>
+           <td>1.5/1</td>
+				</tr>
+
+				<tr>
+					<th scope="row">9</th>
+		       <td>Navio fantasma</td>
+					 <td>Steve Beck</td>
+					 <td>27 de outubro de 2002</td>
+					 <td>Terror</td>
+					 <td>Gabriel Byrme</td>
+           <td>5,/10</td>
+				</tr>
+
+				  <tr>
+					<th class="text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Comédia</th>
+				</tr>
+
+					<tr>
+					<th scope="row">10</th>
+					 <td>Pulp Fiction: Tempo de Violência</td>
+					 <td>Quentin Tarantino</td>
+					 <td>18 de fevereiro de 1995</td>
+					 <td>Comédia</td>
+					 <td>John Travolta</td>
+           <td>8,9/10</td>
+				</tr>
+
+					<tr>
+					<th scope="row">11</th>
+					 <td>Apertem os Cintos, o Piloto Sumiu</td>
+					 <td>Jim Abrahams, David Zucker, Jerry Zucker</td>
+					 <td>26 de dezembro de 1980</td>
+					 <td>Comédia</td>
+					 <td>Robert Hays</td>
+           <td>7,7/10</td>
+				</tr>
+
+					<tr>
+	        <th scope="row">12</th>
+					 <td>Os Caça-Fantasmas</td>
+					 <td>Ivan Reitman</td>
+					 <td>20 de dezembro de 1984</td>
+					 <td>Comédia</td>
+					 <td>Bill Murray</td>
+           <td>7,8/10</td>
+				</tr>
+
+				  <tr>
+					<th class="text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Drama</th>
+				</tr>
+
+
+					<tr>
+					<th scope="row">13</th>
+				   <td>Um Sonho de Liberdade</td>
+					 <td>Frank Darabont</td>
+					 <td>17 de março de 1995</td>
+					 <td>Drama</td>
+					 <td>Morgan Freeman</td>
+           <td>9,3/10</td>
+
+				</tr>
+
+					<tr>
+					<th scope="row">14</th>
+					 <td>O Poderoso Chefão</td>
+					 <td>Francis Ford Coppola</td>
+					 <td>7 de julho de 1972</td>
+					 <td>Drama</td>
+					 <td>Al Pacino</td>
+           <td>9,2/10</td>
+				</tr>
+
+					<tr>
+					<th scope="row">15</th>
+					 <td>A Lista de Schindler</td>
+					 <td>Steven Spielberg</td>
+					 <td>31 de dezembro de 1993</td>
+					 <td>Drama</td>
+					 <td>Liam Neeson</td>
+           <td>9,0/10</td>
+
+				</tr>
+
+				  <tr>
+					<th class=" text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Romace</th>
+				</tr>
+
+					<tr>
+					<th scope="row">16</th>
+					 <td>Dirty Dancing: ritmo quente</td>
+					 <td>Emile Ardolino</td>
+					 <td>25 de setembro de 1987</td>
+					 <td>Romance</td>
+					 <td>Jennifer Grey, Patrick Swayze</td>
+           <td>7/10</td>
+
+				</tr>
+
+					<tr>
+					<th scope="row">17</th>
+					 <td>Ghost: do outro lado da vida</td>
+					 <td>Jerry Zucker</td>
+					 <td>1 de novembro de 1990</td>
+					 <td>Romance</td>
+					 <td>Demi Moore, Patrick Swayze</td>
+           <td>7,1/10</td>
+				</tr>
+
+					<tr>
+					<th scope="row">18</th>
+					 <td>	Amor à segunda vista</td>
+					 <td>Marc Lawrence</td>
+					 <td>12 de dezembro de 2002</td>
+					 <td>Romance</td>
+					 <td>Sandra Bullock</td>
+           <td>6,1/10</td>
+				</tr>
+
+				  <tr>
+					<th class=" text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Suspense</th>
+				</tr>
+
+					<tr>
+					<th scope="row">19</th>
+					 <td>Obesessão</td>
+					 <td>Steve Skill</td>
+					 <td>21 de maio de 2009</td>
+					 <td>Suspense</td>
+					 <td>Iris Elba</td>
+           <td>5,5</td>
+
+				</tr>
+
+					<tr>
+					<th scope="row">20</th>
+					 <td>Parasita</td>
+					 <td>Yang Jin-mo</td>
+					 <td>21 de maio de 2018</td>
+					 <td>Suspense</td>
+					 <td>Jang Hye-jin</td>
+           <td>5,5/10</td>
+				</tr>
+
+					<tr>
+					<th scope="row">21</th>
+					 <td>Sem saida</td>
+					 <td>John Singleton</td>
+					 <td>23 de setembro de 2011</td>
+					 <td>suspense</td>
+					 <td>Taylor Lautner</td>
+           <td>5.9</td>
+				</tr>
+
+				  <tr>
+					<th class=" text-center text-primary bg-dark p-3 mb-2" colspan="8" id="#gAnim">Series</th>
+				</tr>
+
+					<tr>
+					<th scope="row">22</th>
+					 <td>Dahmer</td>
+					 <td>David Jacobson</td>
+					 <td>21 de junho de 2002</td>
+					 <td>Terror,Suspense</td>
+					 <td>Bruce Davison</td>
+           <td>5,6/10</td>
+				</tr>
+
+					<tr>
+					<th scope="row">23</th>
+					 <td>Ragnarok</td>
+					 <td>Taika Waitili</td>
+					 <td>26 de outubro de 2017</td>
+					 <td>Aventura,Fantasia</td>
+					 <td>Chris Hemswoth</td>
+           <td>5.9/10</td>
+				</tr>
+
+					<tr>
+					<th scope="row">24</th>
+					 <td>Dark</td>
+					 <td>Baran Bo Odar</td>
+					 <td>1 de dezembro de 2017</td>
+					 <td>Drama,Suspense</td>
+					 <td>Louis Hofmann</td>
+           <td>8,7/10</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Final da tabela -->
+	</div>
+
+	<!-- Divisor de página -->
+	<div class="m-5">
+		<hr class="border-danger border border-1 opacity-75">
+	</div>
+    
+    <div class="container mb-5">
+    	<h2 class="text-center mb-5 text-primary bg-dark p-2">Cadastro de Filmes....!</h2>
+    	<form>
+    	   <div class="row">
+    		 <div class="mb-3 col">
+    			<label for="codFilme" class="form-label fw-bold">Codigo:</label>
+    			<input type="text" id="codFilme" class="form-control border-danger border border-1">		
+    		 </div>
+    		  <div class="mb-3 col">
+    			<label for="anoFilme" class="form-label fw-bold">Ano:</label>
+    			<input type="date" id="anoFilme" class="form-control border-danger border border-1">		
+    		 </div>
+    		</div>
+
+    		<div class="row">
+    		 <div class="mb-3 col">
+    			<label for="tituloFilme" class="form-label fw-bold">Titulo:</label>
+    			<input type="text" id="tituloFilme" class="form-control border-danger border border-1">		
+    		 </div>
+    		  <div class="mb-3 col">
+    			<label for="diretorFilme" class="form-label fw-bold">Diretor:</label>
+    			<input type="text" id="diretorFilme" class="form-control border-danger border border-1">		
+    		 </div>
+    		 <div class="mb-3 col">
+    			<label for="atorFilme" class="form-label fw-bold">Ator/Atriz Principal:</label>
+    			<input type="text" id="atorFilme" class="form-control border-danger border border-1">		
+    		 </div>
+    		 <div class="mb-3 col">
+    			<label for="notaFilme" class="form-label fw-bold">Nota IMDb:</label>
+    			<input type="numb" id="notaFilme" class="form-control border-danger border border-1">		
+    		 </div>
+
+    		 <div class="row">
+    		 	<div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenAcao" class="form-check-imput" value="acao">
+    		 		<label for="radGenAcao" class="form-label fw-bold">Ação</label><br>
+    		 		</div>
+                <div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenAnimacao" class="form-check-imput" value="animacao">
+    		 		<label for="radGenAnimacao" class="form-label fw-bold">Animação</label><br>
+    		 		</div>
+                <div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenTerror" class="form-check-imput" value="terror">
+    		 		<label for="radGenTerror" class="form-label fw-bold">Terror</label><br>
+    		 		</div>
+                <div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenComedia" class="form-check-imput" value="comedia">
+    		 		<label for="radGenComedia" class="form-label fw-bold">Comédia</label><br>
+    		 		</div>
+                <div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenRomace" class="form-check-imput" value="romace">
+    		 		<label for="radGenRomace" class="form-label fw-bold">Romace</label><br>
+    		 		</div>
+                <div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenSuspense" class="form-check-imput" value="suspense">
+    		 		<label for="radGenSuspense" class="form-label fw-bold">Suspense</label><br>
+    		 	</div>
+    		 	      <div class="mb-1 col form-check">
+    		 		<input type="radio" name="radio" id="radGenSeries" class="form-check-imput" value="series">
+    		 		<label for="radGenSeries" class="form-label fw-bold">Series</label>
+    		 	</div>
+    		 </div>
+
+    		 <div class="col-auto">
+    		 	<button type="submit" class="btn btn-danger mb-5 fw-bold">Cadastrar</button>
+    		 </div>
+    	  </div>
+    	</form> 		
+    </div> 
+
+</body>
+</html>
